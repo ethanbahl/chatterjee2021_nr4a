@@ -1,0 +1,20 @@
+,sample_name,title,source_name,organism,strain,tissue,experiment,genotype,DN,tTA,exposure,replicate,molecule,processed_data_file
+sample01,sample01,exp1_DN_SOR_1,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN+,DN+,tTA+,SOR,1,total RNA (Ribo-Zero gold),counts_all.csv
+sample02,sample02,exp1_control_SOR_1,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,1,total RNA (Ribo-Zero gold),counts_all.csv
+sample03,sample03,exp1_control_SOR_2,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,2,total RNA (Ribo-Zero gold),counts_all.csv
+sample04,sample04,exp1_DN_SOR_2,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN+,DN+,tTA+,SOR,2,total RNA (Ribo-Zero gold),counts_all.csv
+sample05,sample05,exp1_control_SOR_3,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,3,total RNA (Ribo-Zero gold),counts_all.csv
+sample06,sample06,exp1_DN_SOR_3,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN+,DN+,tTA+,SOR,3,total RNA (Ribo-Zero gold),counts_all.csv
+sample07,sample07,exp1_control_SOR_4,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,4,total RNA (Ribo-Zero gold),counts_all.csv
+sample08,sample08,exp1_control_SOR_5,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,5,total RNA (Ribo-Zero gold),counts_all.csv
+sample09,sample09,exp1_control_SOR_6,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN-,DN-,tTA+,SOR,6,total RNA (Ribo-Zero gold),counts_all.csv
+sample10,sample10,exp1_DN_SOR_4,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN+,DN+,tTA+,SOR,4,total RNA (Ribo-Zero gold),counts_all.csv
+sample11,sample11,exp1_DN_SOR_5,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment1,tTA+/DN+,DN+,tTA+,SOR,5,total RNA (Ribo-Zero gold),counts_all.csv
+sample12,sample12,exp2_control_homecage_1,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA-/DN-,DN-,tTA-,homecage,1,total RNA (Ribo-Zero gold),counts_all.csv
+sample13,sample13,exp2_control_SOR_1,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA-/DN-,DN-,tTA-,SOR,1,total RNA (Ribo-Zero gold),counts_all.csv
+sample14,sample14,exp2_control_homecage_2,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA-/DN-,DN-,tTA-,homecage,2,total RNA (Ribo-Zero gold),counts_all.csv
+sample15,sample15,exp2_control_SOR_2,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA+/DN-,DN-,tTA+,SOR,2,total RNA (Ribo-Zero gold),counts_all.csv
+sample16,sample16,exp2_control_homecage_3,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA+/DN-,DN-,tTA+,homecage,3,total RNA (Ribo-Zero gold),counts_all.csv
+sample17,sample17,exp2_control_SOR_3,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA+/DN-,DN-,tTA+,SOR,3,total RNA (Ribo-Zero gold),counts_all.csv
+sample18,sample18,exp2_control_homecage_4,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA+/DN-,DN-,tTA+,homecage,4,total RNA (Ribo-Zero gold),counts_all.csv
+sample19,sample19,exp2_control_SOR_4,dorsal hippocampus,Mus musculus,C57BL/6J,dorsal hippocampus,experiment2,tTA+/DN-,DN-,tTA+,SOR,4,total RNA (Ribo-Zero gold),counts_all.csv
