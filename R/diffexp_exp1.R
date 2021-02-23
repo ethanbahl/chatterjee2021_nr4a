@@ -10,7 +10,7 @@ ct = as.matrix(read.csv("data/counts_all.csv", row.names=1, stringsAsFactors=FAL
 ### read sample info.
 sample.info = read.csv("data/samples_information.csv", row.names=1, stringsAsFactors=FALSE)
 ### read gene info.
-gene.info = read.csv("/genome/abel/nr4adn/chatterjee2021_nr4a/data/gene_annotation.csv", row.names=1, stringsAsFactors=FALSE)
+gene.info = read.csv("/data/gene_annotation.csv", row.names=1, stringsAsFactors=FALSE)
 
 identical(rownames(ct), rownames(gene.info))
 identical(colnames(ct), rownames(sample.info))
