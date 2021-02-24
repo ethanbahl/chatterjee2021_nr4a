@@ -1,4 +1,4 @@
-########## Differential Expression Analysis: CTRL-SOR vs CTRL-HOME (i.e., the effect of learning in DN- samples).
+########## Differential Expression Analysis: CTRL-SOR vs NR4ADN-SOR (i.e., the effect of NR4ADN in the context of SOR).
 
 library(EDASeq) # EDASeq_2.20.0
 library(edgeR) # edgeR_3.28.0
@@ -10,7 +10,7 @@ ct = as.matrix(read.csv("data/counts_all.csv", row.names=1, stringsAsFactors=FAL
 ### read sample info.
 sample.info = read.csv("data/samples_information.csv", row.names=1, stringsAsFactors=FALSE)
 ### read gene info.
-gene.info = read.csv("/data/gene_annotation.csv", row.names=1, stringsAsFactors=FALSE)
+gene.info = read.csv("data/gene_annotation.csv", row.names=1, stringsAsFactors=FALSE)
 
 identical(rownames(ct), rownames(gene.info))
 identical(colnames(ct), rownames(sample.info))
@@ -26,6 +26,8 @@ set = set.all
 set = set[ , pData(set)$experiment %in% c("experiment1")]
 pData(set) = droplevels(pData(set))
 
+# ordering levels for interpreting sign of fold change.
+# positive fold change indicates elevated expression in DN+.
 pData(set)$DN = factor(pData(set)$DN, levels=c("DN-", "DN+"))
 
 ########## gene filtering.
@@ -34,7 +36,6 @@ y <- DGEList(counts(set), samples=pData(set), genes=fData(set))
 keep = filterByExpr(y)
 y <- y[keep, , keep.lib.sizes=FALSE]
 set = set[keep,]; rm(keep)
-
 
 ########## EDASeq.
 ### EDASeq normalization for GC content, and then sequencing depth.
@@ -85,3 +86,6 @@ top$effect.size = sign(top$logFC) * (abs(top$logFC) / (sqrt(1/(top$logCPM + y[ro
 
 ### add first pass to 'out' variable.
 exp1.results$W6 = list(set=set.ruv, y=y, fit=fit, test=test, top=top)
+
+### save differential expression results for experiment 1 (i.e., the effect of NR4ADN in the context of SOR).
+write.csv(exp1.results$W6$top, file="results/experiment1_diffexp_results.csv", quote=FALSE)
