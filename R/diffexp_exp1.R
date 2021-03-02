@@ -88,4 +88,4 @@ top$effect.size = sign(top$logFC) * (abs(top$logFC) / (sqrt(1/(top$logCPM + y[ro
 exp1.results$W6 = list(set=set.ruv, y=y, fit=fit, test=test, top=top)
 
 ### save differential expression results for experiment 1 (i.e., the effect of NR4ADN in the context of SOR).
-write.csv(exp1.results$W6$top, file="results/experiment1_diffexp_results.csv", quote=FALSE)
+# write.csv(exp1.results$W6$top, file="results/experiment1_diffexp_results.csv", quote=FALSE)

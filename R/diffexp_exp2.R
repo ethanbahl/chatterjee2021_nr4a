@@ -82,3 +82,6 @@ top$effect.size = sign(top$logFC) * (abs(top$logFC) / (sqrt(1/(top$logCPM + y[ro
 
 ### add first pass to 'out' variable.
 exp2.results$W1 = list(set=set.ruv, y=y, fit=fit, test=test, top=top)
+
+### save differential expression results for experiment 2 (i.e., the effect of learning in DN- samples).
+# write.csv(exp2.results$W1$top, file="results/experiment2_diffexp_results.csv", quote=FALSE)
